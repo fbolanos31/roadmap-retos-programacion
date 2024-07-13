@@ -3,8 +3,6 @@ name: Stats
 on:
   schedule:
     - cron: '0 0 * * *'
-  push:
-    branches: [main]
   pull_request:
       branches: [main]
   workflow_dispatch:
@@ -33,4 +31,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Updated stats.py
-          commit_author: fbolanos31 [Github Actions]
